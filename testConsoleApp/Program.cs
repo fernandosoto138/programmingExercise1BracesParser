@@ -7,10 +7,10 @@ namespace testConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Analizando...");
+            Console.WriteLine("Analyzing...");
             String[] trueTests = { "{}", "({})", "{}()[]" };
             String[] falseTests = { "(", "{}(", "{(})", "[]()]" };
-            Console.WriteLine("Good Brackets");
+            Console.WriteLine("Good Braces");
             foreach( String T in trueTests)
             {
                 if (Analize(T))
@@ -18,7 +18,7 @@ namespace testConsoleApp
                 else
                     Console.WriteLine("Error : " + T);
             }
-            Console.WriteLine("\nBad Brackets");
+            Console.WriteLine("\nBad Braces");
             foreach (String F in falseTests)
             {
                 if (!Analize(F))
