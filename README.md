@@ -1,4 +1,4 @@
-# Programming Exercies #1
+# Programming Exercise #1
 ## Braces Parser
 
 ### Description 
